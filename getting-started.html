@@ -5,11 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Getting Started - TargetLens Documentation</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <!-- Add Mintlify-like styling -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="layout">
+        <!-- Mobile Navigation Toggle -->
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+        
+        <!-- Sidebar Overlay -->
+        <div class="sidebar-overlay"></div>
+        
         <aside class="sidebar">
             <div class="sidebar-header">
                 <a href="index.html" class="logo">
@@ -55,6 +68,12 @@
         </aside>
         <main class="main-content">
             <header class="header">
+                <div class="language-switcher">
+                    <select id="language-switcher">
+                        <option value="en" selected>English</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
             </header>
             <div class="content">
                 <div class="content-container">
@@ -217,20 +236,8 @@
                     </ul>
 
                     <div class="navigation-links">
-                        <a href="index.html" class="prev-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="19" y1="12" x2="5" y2="12"></line>
-                                <polyline points="12 19 5 12 12 5"></polyline>
-                            </svg>
-                            Introduction
-                        </a>
-                        <a href="platform-overview.html" class="next-link">
-                            Platform Overview
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </a>
+                        <a href="index.html" class="prev-link">← Introduction</a>
+                        <a href="platform-overview.html" class="next-link">Platform Overview →</a>
                     </div>
                 </div>
             </div>
@@ -257,5 +264,6 @@
             </footer>
         </main>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
