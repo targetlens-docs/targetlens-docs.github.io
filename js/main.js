@@ -4,12 +4,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const sidebar = document.querySelector('.sidebar');
     const sidebarOverlay = document.querySelector('.sidebar-overlay');
     
+    // Ensure mobile navigation toggle works on all pages
     if (mobileNavToggle && sidebar) {
         mobileNavToggle.addEventListener('click', function() {
             sidebar.classList.toggle('open');
             if (sidebarOverlay) {
                 sidebarOverlay.classList.toggle('active');
             }
+            document.body.classList.toggle('sidebar-open');
         });
     }
     
@@ -17,18 +19,37 @@ document.addEventListener('DOMContentLoaded', function() {
         sidebarOverlay.addEventListener('click', function() {
             sidebar.classList.remove('open');
             sidebarOverlay.classList.remove('active');
+            document.body.classList.remove('sidebar-open');
         });
     }
+    
+    // Allow closing sidebar by clicking outside
+    document.addEventListener('click', function(event) {
+        const isClickInside = sidebar.contains(event.target) || mobileNavToggle.contains(event.target);
+        if (!isClickInside && sidebar.classList.contains('open')) {
+            sidebar.classList.remove('open');
+            if (sidebarOverlay) {
+                sidebarOverlay.classList.remove('active');
+            }
+            document.body.classList.remove('sidebar-open');
+        }
+    });
     
     // Language switcher
     const languageSwitcher = document.getElementById('language-switcher');
     if (languageSwitcher) {
         // Set the correct language on page load
         const currentPath = window.location.pathname;
-        const filename = currentPath.split('/').pop() || 'index.html';
+        let filename = currentPath.split('/').pop() || 'index.html';
+        
+        // Handle case when URL ends with / (no filename)
+        if (filename === '' || !filename.includes('.html')) {
+            filename = 'index.html';
+        }
+        
         console.log("Current filename:", filename);
         
-        if (filename.includes('-zh.html')) {
+        if (filename.includes('-zh.html') || filename === 'index-zh.html') {
             languageSwitcher.value = 'zh';
         } else {
             languageSwitcher.value = 'en';
@@ -47,7 +68,19 @@ document.addEventListener('DOMContentLoaded', function() {
 function switchLanguage(lang) {
     // Get current page path
     const currentPath = window.location.pathname;
-    const filename = currentPath.split('/').pop() || 'index.html'; // Default to index.html if path ends with /
+    let filename = currentPath.split('/').pop() || 'index.html'; // Default to index.html if path ends with /
+    
+    // Handle case when URL ends with / or is the root URL (no filename)
+    if (filename === '' || (currentPath.endsWith('/') && !filename.includes('.html'))) {
+        // We're at the root URL - handle the index case specifically
+        if (lang === 'zh') {
+            window.location.href = 'index-zh.html';
+            return;
+        } else {
+            window.location.href = 'index.html';
+            return;
+        }
+    }
     
     console.log("switchLanguage() - Current path:", currentPath);
     console.log("switchLanguage() - Filename:", filename);
