@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活动自动化 - 智瞳精投文档</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <!-- Add Mintlify-like styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="layout">
+        <!-- Mobile Navigation Toggle -->
+        <button class="mobile-nav-toggle" aria-label="切换导航">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+        
+        <!-- Sidebar Overlay -->
+        <div class="sidebar-overlay"></div>
+        
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="index-zh.html" class="logo">
+                    <img src="img/targetlens-icon.svg" alt="智瞳精投 Logo" width="32" height="32" style="margin-right: 8px;">
+                    <span>智瞳精投</span>
+                </a>
+            </div>
+            <div class="sidebar-content">
+                <nav class="sidebar-nav">
+                    <div class="nav-section">
+                        <h3>开始使用</h3>
+                        <ul>
+                            <li><a href="index-zh.html">介绍</a></li>
+                            <li><a href="getting-started-zh.html">入门指南</a></li>
+                            <li><a href="platform-overview-zh.html">平台概述</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-section">
+                        <h3>核心功能</h3>
+                        <ul>
+                            <li><a href="audience-discovery-zh.html">AI驱动的受众发现</a></li>
+                            <li><a href="roi-optimization-zh.html">投资回报率优化</a></li>
+                            <li><a href="ad-creation-zh.html">个性化广告创建</a></li>
+                            <li class="active"><a href="campaign-automation-zh.html">活动自动化</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-section">
+                        <h3>资源</h3>
+                        <ul>
+                            <li><a href="case-studies-zh.html">案例研究</a></li>
+                            <li><a href="faq-zh.html">常见问题</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-section">
+                        <h3>公司</h3>
+                        <ul>
+                            <li><a href="pricing-zh.html">价格</a></li>
+                            <li><a href="contact-zh.html">联系我们</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <div class="language-switcher">
+                    <select id="language-switcher">
+                        <option value="zh" selected>中文</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+            </header>
+            <div class="content">
+                <div class="content-container">
+                    <h1>活动自动化</h1>
+                    
+                    <p class="lead">
+                        智瞳精投自动化整个活动管理流程，从启动到优化，同时让您在活动上线前拥有完全的控制权来预览和编辑。
+                    </p>
+
+
+                    <p>
+                        跨多个平台管理数字营销活动既复杂又耗时。营销人员通常花费数小时手动设置活动、监控性能和进行调整——这些时间本可以更好地用于战略计划。
+                    </p>
+
+                    <p>
+                        智瞳精投通过端到端的活动自动化解决这一挑战，处理从活动设置到持续优化的所有事务，同时仍然让您在活动上线前拥有完全的审核和编辑控制权。
+                    </p>
+
+                    <h2>自动化流程</h2>
+
+                    <div class="steps-container">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>活动规划</h4>
+                                <p>智瞳精投分析您的营销目标并自动制定全面的活动策略。</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>受众选择</h4>
+                                <p>系统根据您的目标和预算确定最佳的受众细分进行定位。</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>创意生成</h4>
+                                <p>为所有相关平台上的每个受众细分创建个性化广告素材。</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>人工审核</h4>
+                                <p>您审核并批准活动策略、受众选择和创意素材。</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h4>活动启动</h4>
+                                <p>智瞳精投自动在所有选定的广告平台上部署您的活动。</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">6</div>
+                            <div class="step-content">
+                                <h4>持续优化</h4>
+                                <p>AI持续监控性能并进行实时调整以最大化结果。</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">7</div>
+                            <div class="step-content">
+                                <h4>性能报告</h4>
+                                <p>全面的报告提供活动性能和投资回报率的洞察。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>主要功能</h2>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                        </div>
+                        <h3>自动化活动设置</h3>
+                        <p>
+                            智瞳精投处理跨多个平台的活动设置的所有技术方面，包括：
+                        </p>
+                        <ul>
+                            <li>活动结构创建</li>
+                            <li>预算分配</li>
+                            <li>竞价策略配置</li>
+                            <li>定位参数</li>
+                            <li>广告排期</li>
+                            <li>转化跟踪设置</li>
+                        </ul>
+                        <div class="info-box">
+                            <p><strong>节省时间：</strong> 自动化活动设置通常为营销团队每次活动启动节省5-10小时。</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 20v-6M6 20V10M18 20V4"></path>
+                            </svg>
+                        </div>
+                        <h3>实时优化</h3>
+                        <p>
+                            智瞳精投持续监控活动性能并进行自动调整以最大化结果：
+                        </p>
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>优化类型</th>
+                                        <th>描述</th>
+                                        <th>频率</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>竞价调整</td>
+                                        <td>根据性能数据自动调整竞价</td>
+                                        <td>每小时</td>
+                                    </tr>
+                                    <tr>
+                                        <td>预算重新分配</td>
+                                        <td>将预算转移到表现最佳的活动和广告组</td>
+                                        <td>每日</td>
+                                    </tr>
+                                    <tr>
+                                        <td>受众细化</td>
+                                        <td>根据响应缩小或扩大受众定位</td>
+                                        <td>每周</td>
+                                    </tr>
+                                    <tr>
+                                        <td>创意轮换</td>
+                                        <td>优先考虑表现最佳的广告创意</td>
+                                        <td>每日</td>
+                                    </tr>
+                                    <tr>
+                                        <td>时段调整</td>
+                                        <td>根据不同时间的表现优化广告排期</td>
+                                        <td>每周</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+                                <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
+                            </svg>
+                        </div>
+                        <h3>跨平台集成</h3>
+                        <p>
+                            智瞳精投与所有主要广告平台无缝集成，使您能够从单一界面管理所有活动：
+                        </p>
+                        <ul>
+                            <li>Facebook & Instagram Ads</li>
+                            <li>Google Ads</li>
+                            <li>LinkedIn Ads</li>
+                            <li>Twitter Ads</li>
+                            <li>TikTok Ads</li>
+                            <li>Pinterest Ads</li>
+                            <li>Snapchat Ads</li>
+                            <li>Amazon Advertising</li>
+                            <li>Microsoft Advertising</li>
+                        </ul>
+                        <div class="callout">
+                            <p><strong>集成亮点：</strong> 智瞳精投的跨平台集成使客户平均节省了每周12小时的活动管理时间。</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                                <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                            </svg>
+                        </div>
+                        <h3>统一报告</h3>
+                        <p>
+                            智瞳精投提供跨所有平台的统一性能报告，让您全面了解营销活动的影响：
+                        </p>
+                        <div class="steps-container">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>数据聚合</h4>
+                                    <p>从所有平台收集性能数据</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>标准化指标</h4>
+                                    <p>将不同平台的指标转换为一致的格式</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>可视化数据</h4>
+                                    <p>创建易于理解的图表和仪表板</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>洞察生成</h4>
+                                    <p>提供可操作的建议和趋势分析</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>自动化规则引擎</h2>
+                    <p>
+                        智瞳精投的自动化规则引擎让您能够设置自定义条件，在满足这些条件时触发特定操作：
+                    </p>
+
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>规则类型</th>
+                                    <th>示例</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>性能阈值</td>
+                                    <td>"如果CPA超过$50，暂停广告组"</td>
+                                </tr>
+                                <tr>
+                                    <td>预算控制</td>
+                                    <td>"如果支出达到每日预算的80%，降低竞价10%"</td>
+                                </tr>
+                                <tr>
+                                    <td>时间触发</td>
+                                    <td>"在周五下午5点增加周末活动的预算"</td>
+                                </tr>
+                                <tr>
+                                    <td>转化优化</td>
+                                    <td>"如果转化率低于2%，轮换新创意"</td>
+                                </tr>
+                                <tr>
+                                    <td>竞争响应</td>
+                                    <td>"如果展示份额下降10%，增加竞价15%"</td>
+                                </tr>
+                                <tr>
+                                    <td>库存管理</td>
+                                    <td>"如果产品库存低于20件，暂停相关广告"</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="info-box">
+                        <p><strong>专业提示：</strong> 使用智瞳精投的规则模板库快速实施行业最佳实践，无需从头开始创建规则。</p>
+                    </div>
+
+                    <h2>人工控制与自动化平衡</h2>
+                    <p>
+                        虽然智瞳精投提供强大的自动化功能，但我们理解营销人员需要保持控制。我们的平台提供多个控制点：
+                    </p>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                            </svg>
+                        </div>
+                        <h3>审核和批准</h3>
+                        <p>
+                            所有自动生成的活动策略、受众选择和创意素材在上线前都需要您的批准。您可以审核、编辑或拒绝任何建议，确保最终决策权始终在您手中。
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3>自动化级别</h3>
+                        <p>
+                            您可以为不同的活动、平台或广告组设置不同级别的自动化。从完全手动到完全自动化，您可以根据您的舒适度和特定需求定制自动化级别。
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </div>
+                        <h3>安全限制</h3>
+                        <p>
+                            设置预算上限、竞价限制和其他安全参数，确保自动化系统在您定义的界限内运行，防止意外支出或不需要的优化。
+                        </p>
+                    </div>
+
+                    <h2>案例研究：活动自动化成功</h2>
+
+                    <div class="callout">
+                        <h3>电子商务零售商</h3>
+                        <p>一家中型电子商务零售商使用智瞳精投的活动自动化来管理跨六个平台的季节性促销活动。</p>
+                        <p><strong>结果：</strong></p>
+                        <ul>
+                            <li>活动管理时间减少78%</li>
+                            <li>转化率提高32%</li>
+                            <li>广告支出投资回报率提高47%</li>
+                            <li>能够同时管理的活动数量增加3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="callout">
+                        <h3>B2B软件公司</h3>
+                        <p>一家SaaS公司使用智瞳精投自动化其需求生成活动，针对不同行业的决策者。</p>
+                        <p><strong>结果：</strong></p>
+                        <ul>
+                            <li>销售线索质量提高41%</li>
+                            <li>每个销售线索的成本降低28%</li>
+                            <li>营销团队将35%的时间从活动管理转移到战略计划</li>
+                        </ul>
+                    </div>
+
+                    <h2>开始使用</h2>
+                    <p>
+                        准备好通过智能活动自动化改变您的营销方式了吗？
+                    </p>
+                    <div class="cta-button">
+                        <a href="getting-started-zh.html" class="button">开始使用智瞳精投</a>
+                    </div>
+
+                    <div class="navigation-links">
+                        <a href="ad-creation-zh.html" class="prev-link">← 个性化广告创建</a>
+                        <a href="case-studies-zh.html" class="next-link">案例研究 →</a>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="social-links">
+                        <a href="https://x.com/TargetLens" aria-label="Twitter" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/targetlens/" aria-label="LinkedIn" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy; 2025 智瞳精投. 保留所有权利.</p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
